@@ -1,0 +1,372 @@
+body {
+	margin: 0%;
+	padding: 0%;
+	width: 100%;
+	max-width: 100%;
+	height: auto;
+	background-color: #f4f4f4;
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+html {
+	width: 100%;
+	overflow: hidden;
+	overflow-y: scroll;
+	scroll-behavior: smooth;
+}
+
+/* nav */
+
+nav {
+	position: fixed;
+	top: 0;
+	font-size: 19px;
+	max-width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 5px;
+	left: 0;
+	right: 0;
+	background-color: rgba(255, 255, 255);
+	z-index: 2;
+}
+
+.logo {
+	margin-right: auto;
+	padding: 5px;
+}
+
+.shortcut {
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	gap: 10px;
+	font-size: 25px;
+}
+
+.globe {
+	margin-right: 15px;
+}
+
+.sous-globe {
+	display: none;
+	font-size: 18px;
+}
+
+.sous-globe a {
+	display: block;
+	text-decoration: none;
+	position: absolute;
+	color: black;
+}
+
+.haut-globe:hover .sous-globe {
+	display: block;
+}
+
+.sous-globe:hover a {
+	color: #043e26;
+	font-weight: bolder;
+}
+
+.proj {
+	color: #043e26;
+	font-weight: bolder;
+}
+
+/********/
+
+/* body */
+
+/********/
+
+.image {
+	background-repeat: no-repeat;
+	background-position: center;
+	height: 100vh;
+	width: 100%;
+	color: black;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 200px;
+	color: rgb(162, 210, 183);
+	font-weight: bolder;
+}
+
+.couleur {
+	background-color: #f4f4f4;
+}
+
+.titre {
+	display: flex;
+	margin-left: 75px;
+}
+
+.nom {
+	display: flex;
+	justify-content: space-between;
+	margin-left: 350px;
+	margin-right: 350px;
+}
+
+.projet {
+	background-color: #f4f4f4;
+}
+
+.ligne {
+	margin-bottom: 20px;
+}
+
+.sautDePage {
+	margin-bottom: 200px;
+}
+
+.marque1 {
+	color: rgb(162, 210, 183);
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-left: 390px;
+	margin-right: 430px;
+	font-size: 30px;
+	font-weight: bolder;
+}
+
+.marque2 {
+	color: rgb(162, 210, 183);
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-left: 360px;
+	margin-right: 440px;
+	font-size: 30px;
+	font-weight: bolder;
+}
+
+.marque3 {
+	color: rgb(162, 210, 183);
+	text-align: center;
+	font-size: 30px;
+	font-weight: bolder;
+}
+
+/*************************************************/
+
+/* mise en forme de chaque ligne avec les images */
+
+/*************************************************/
+
+.careD {
+	width: 370px;
+	height: 350px;
+	margin-right: 20px;
+	object-fit: cover;
+}
+
+.gauche {
+	margin-left: 80px;
+	width: 370px;
+	height: 350px;
+	object-fit: cover;
+}
+
+.droite {
+	margin-right: 50px;
+	width: 370px;
+	height: 350px;
+	object-fit: cover;
+}
+
+.centreG {
+	margin-left: 20px;
+	width: 370px;
+	height: 350px;
+	margin-right: 200px;
+	object-fit: cover;
+}
+
+.centreD {
+	margin-left: 200px;
+	margin-right: 20px;
+	width: 370px;
+	height: 350px;
+	object-fit: cover;
+}
+
+.droiteL {
+	width: 765px;
+	height: 350px;
+	margin-right: 80px;
+	object-fit: cover;
+}
+
+.gaucheL {
+	width: 765px;
+	height: 350px;
+	margin-left: 80px;
+	object-fit: cover;
+}
+
+.ligne3 {
+	text-align: center;
+}
+
+.Iligne {
+	width: 450px;
+	margin-left: 30px;
+	margin-right: 30px;
+}
+
+.ogstore {
+	text-align: center;
+	font-size: 30px;
+	color: rgb(162, 210, 183);
+	font-weight: bolder;
+}
+
+.videos {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 80px;
+}
+
+/**********/
+
+/* Footer */
+
+/**********/
+
+footer {
+	font-size: 16px;
+	display: flex;
+	padding: 5px;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.basdroite {
+	align-items: center;
+	display: flex;
+	gap: 13px;
+}
+
+.reseau {
+	display: flex;
+	margin-right: 30px;
+	gap: 30px;
+}
+
+/*********/
+
+/* hover */
+
+/*********/
+
+.projet img:hover {
+	transform: scale(0.95, 0.95);
+	transition: 0.25s;
+	opacity: 0.8;
+}
+
+.reseau a:hover {
+	transform: scale(1.3, 1.3);
+	transition: 0.25s;
+}
+
+/*******************/
+
+/* style des liens */
+
+/*******************/
+
+.page:hover {
+	text-decoration: underline;
+	transform: 2s;
+	color: #043e26;
+}
+
+.page {
+	text-decoration: none;
+	color: black;
+}
+
+.pageActuelle {
+	text-decoration: none;
+}
+
+/****************/
+
+/* Media Screen */
+
+/****************/
+
+@media screen and (max-width: 1600px) {
+	.ligne {
+		margin-bottom: 20px;
+	}
+	.sautDePage {
+		margin-bottom: 200px;
+	}
+	.marque1 {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		margin-left: 210px;
+		margin-right: 240px;
+		font-size: 25px;
+	}
+	.marque2 {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		margin-left: 320px;
+		margin-right: 480px;
+		font-size: 25px;
+	}
+	.careD {
+		width: 300px;
+		height: 300px;
+		margin-right: 20px;
+		object-fit: cover;
+	}
+	.gauche {
+		margin-left: 80px;
+		width: 300px;
+		height: 300px;
+		object-fit: cover;
+	}
+	.droite {
+		margin-right: 50px;
+		width: 300px;
+		height: 300px;
+		object-fit: cover;
+	}
+	.centreG {
+		margin-left: 20px;
+		width: 300px;
+		height: 300px;
+		margin-right: 100px;
+		object-fit: cover;
+	}
+	.centreD {
+		margin-left: 100px;
+		margin-right: 20px;
+		width: 300px;
+		height: 300px;
+		object-fit: cover;
+	}
+	.droiteL {
+		width: 625px;
+		height: 300px;
+		margin-right: 80px;
+		object-fit: cover;
+	}
+	.gaucheL {
+		width: 625px;
+		height: 300px;
+		margin-left: 80px;
+		object-fit: cover;
+	}
+}

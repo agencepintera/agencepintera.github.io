@@ -1,0 +1,178 @@
+body {
+	margin: 0%;
+	padding: 0%;
+	width: 100%;
+	max-width: 100%;
+	height: auto;
+	background-color: #f4f4f4;
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+html {
+	width: 100%;
+	overflow: hidden;
+	overflow-y: scroll;
+	scroll-behavior: smooth;
+}
+
+/*******/
+
+/* nav */
+
+/******/
+
+nav {
+	position: fixed;
+	top: 0;
+	font-size: 19px;
+	max-width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 5px;
+	left: 0;
+	right: 0;
+	background-color: rgba(255, 255, 255);
+	z-index: 2;
+}
+
+.logo {
+	margin-right: auto;
+	padding: 5px;
+}
+
+.shortcut {
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	gap: 10px;
+	font-size: 25px;
+}
+
+.globe {
+	margin-right: 15px;
+}
+
+.sous-globe {
+	display: none;
+	font-size: 18px;
+}
+
+.sous-globe a {
+	display: block;
+	text-decoration: none;
+	position: absolute;
+	color: black;
+}
+
+.haut-globe:hover .sous-globe {
+	display: block;
+}
+
+.sous-globe:hover a {
+	color: #043e26;
+	font-weight: bolder;
+}
+
+.cont {
+	color: #043e26;
+	font-weight: bolder;
+}
+
+/********/
+
+/* body */
+
+/********/
+
+main {
+	display: flex;
+	justify-content: space-around;
+	margin-top: 80px;
+}
+
+.illu {
+	width: 300px;
+	height: 40px;
+	transform: scaleX(-1);
+	margin-left: 450px;
+	margin-top: 80px;
+}
+
+.formulaire {
+	margin-top: 350px;
+	margin-right: 400px;
+}
+
+input {
+	width: 300px;
+	height: 40px;
+}
+
+/**********/
+
+/* Footer */
+
+/**********/
+
+.footer {
+	margin-top: 258px;
+	display: flex;
+	padding: 5px;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.basdroite {
+	align-items: center;
+	display: flex;
+	gap: 13px;
+}
+
+.reseau {
+	display: flex;
+	margin-right: 30px;
+	gap: 30px;
+}
+
+/*******************/
+
+/* style des liens */
+
+/*******************/
+
+.page:visited {
+	text-decoration: none;
+}
+
+.page:hover {
+	text-decoration: underline;
+	transform: 2s;
+	color: #043e26;
+}
+
+.page {
+	text-decoration: none;
+	color: black;
+}
+
+.pageActuelle {
+	text-decoration: none;
+}
+
+/*********/
+
+/* hover */
+
+/*********/
+
+.projet img:hover {
+	transform: scale(0.95, 0.95);
+	transition: 0.25s;
+	opacity: 0.8;
+}
+
+.reseau a:hover {
+	transform: scale(1.3, 1.3);
+	transition: 0.25s;
+}
